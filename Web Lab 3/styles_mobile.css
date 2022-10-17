@@ -1,0 +1,64 @@
+h1 {
+    height: 1.5em;
+    width: 3em;
+    text-align: center;
+    border: 1px solid black;
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+    padding: 0px 10px;
+}
+.container {
+    display: grid;
+    grid-template-areas:
+        "one"
+        "two"
+        "three"
+        "four"
+        "five"
+        "six";
+    grid-template-rows:
+        minmax(170px, auto) minmax(60px, auto) minmax(50px, 50px)
+        minmax(170px, auto);
+    justify-content: start;
+}
+.item {
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid black;
+}
+.item_1 {
+    display: flex;
+    background-color: #acc8e1;
+    grid-area: one;
+    flex-direction: column;
+}
+.x {
+    align-self: center;
+}
+
+.item_2 {
+    background-color: #e1ceac;
+    grid-area: two;
+}
+.item_3 {
+    background-color: #c2edbf;
+    grid-area: three;
+}
+.item_4 {
+    text-align: center;
+    grid-area: four;
+}
+.item_5 {
+    background-color: #e1ceac;
+    grid-area: five;
+}
+.item_6 {
+    display: flex;
+    background-color: #acc8e1;
+    grid-area: six;
+    flex-direction: column;
+}
+.y {
+    align-self: center;
+}
