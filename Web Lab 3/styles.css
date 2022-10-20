@@ -67,3 +67,42 @@ h1 {
 .p_1 {
     width: 80%;
 }
+@media screen and (max-width: 800px) {
+    .container {
+        display: grid;
+        grid-template-areas:
+            "one"
+            "two"
+            "three"
+            "four"
+            "five"
+            "six";
+        grid-template-columns: 1fr;
+        grid-template-rows:
+            minmax(170px, auto) minmax(60px, auto) minmax(50px, 50px)
+            minmax(170px, auto);
+        justify-content: start;
+    }
+    .item_1 {
+        display: flex;
+        background-color: #acc8e1;
+        grid-area: one;
+        flex-direction: column;
+    }
+    .x {
+        align-self: center;
+    }
+    .item_6 {
+        display: flex;
+        background-color: #acc8e1;
+        grid-area: six;
+        flex-direction: column;
+    }
+    .y {
+        align-self: center;
+    }
+    .p_1,
+    .p_6 {
+        width: 100%;
+    }
+}
