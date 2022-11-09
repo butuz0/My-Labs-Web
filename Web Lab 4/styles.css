@@ -1,0 +1,139 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    min-height: 70px;
+    background-color: white;
+    border-bottom: solid 2px rgb(219, 219, 219);
+    display: flex;
+    font-size: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+.search input {
+    padding: 6px;
+    font-size: 17px;
+    border: none;
+    border: solid 1px rgb(219, 219, 219);
+    border-right: 0px;
+    width: 130px;
+}
+.menu button {
+    border: 0px;
+    background-color: white;
+}
+.search button {
+    float: right;
+    padding: 6px;
+    font-size: 17px;
+    border: solid 1px rgb(219, 219, 219);
+    border-left: 0px;
+    cursor: pointer;
+    background-color: white;
+    color: rgb(173, 173, 173);
+}
+.main {
+    min-height: 620px;
+    height: fit-content;
+    background-image: url(images/yellow-walls.jpg);
+    background-position: center center;
+}
+.text {
+    margin: auto 14%;
+    margin-top: 5%;
+    text-align: justify;
+}
+h1 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 50px;
+}
+.text p {
+    width: 50%;
+    color: rgb(107, 107, 107);
+}
+.icons {
+    display: flex;
+    justify-content: center;
+}
+h2 {
+    font-size: 20px;
+    color: #ffbe00;
+    margin-left: 10%;
+    margin-bottom: 5px;
+}
+.icon {
+    width: 23%;
+    background-color: rgb(243, 243, 243);
+    margin: 10px;
+}
+.icon img {
+    margin: 8% auto 3% auto;
+    display: block;
+}
+.icon p {
+    margin: auto 10% 20px 10%;
+    color: rgb(107, 107, 107);
+    font-style: italic;
+    font-size: 13px;
+}
+.footer {
+    display: flex;
+    font-size: 20px;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    min-height: 90px;
+    background-color: #1a1a1a;
+    border-top: solid 1px black;
+}
+a {
+    color: #b9b9b9;
+    text-decoration: none;
+    font-size: 15px;
+    margin-right: 20px;
+}
+.image {
+    display: none;
+}
+@media screen and (max-width: 760px) {
+    .header {
+        padding: 17px 0px 13px 0px;
+        flex-direction: column;
+    }
+    .main {
+        background-position: center bottom;
+    }
+    .icons {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: fit-content;
+        margin-bottom: 30px;
+    }
+    .icon {
+        width: 70%;
+    }
+    .text {
+        margin-top: 15%;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    .text p {
+        width: 100%;
+        font-size: 13px;
+        text-align: left;
+    }
+    .nav navbar {
+        display: none;
+    }
+    .image {
+        display: block;
+    }
+}
