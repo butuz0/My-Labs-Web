@@ -65,9 +65,9 @@ function get_cookie(name) {
     if (parts.length == 2) return parts.pop().split(";").shift();
 }
 
-if (get_cookie("result") != "") {
+if (get_cookie("result")) {
     if (confirm(`There are some cookies: ${document.cookie}. Delete them?`)) {
-        document.cookie = "result=;";
+        document.cookie = "result=;expires=Thu, 01 Jan 1970 00:00:00 GMT;";
         alert("No cookies left.");
     } else {
         alert("There are some cookies, reload the page.");
